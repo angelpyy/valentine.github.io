@@ -12,19 +12,19 @@ app.use(express.static('./'));
 // Handle food selections
 app.post('/submit-food', (req, res) => {
   console.log('Food selections:', req.body.food);
-  res.redirect('/dessert.html');
+  res.redirect('valentine.github.io/dessert.html');
 });
 
 // Handle dessert selections
 app.post('/submit-dessert', (req, res) => {
   console.log('Dessert selections:', req.body.dessert);
-  res.redirect('/activities.html');
+  res.redirect('valentine.github.io/activities.html');
 });
 
 // Handle activity selections
 app.post('/submit-activities', (req, res) => {
   console.log('Activity selections:', req.body.activities);
-  res.redirect('/lastpage.html');
+  res.redirect('valentine.github.io/lastpage.html');
 });
 
 app.listen(port, () => {
