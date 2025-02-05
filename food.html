@@ -11,55 +11,58 @@
       <b>What food would you like to eat?</b>
     </div>
 
-    <div class="food-selection">
-      <div class="food-item">
-        <img src="food/burgers.jpeg" alt="Burgers, fries and fried chicken" />
-        <label
-          ><input
-            type="checkbox"
-            name="food"
-            value="Burgers, fries and fried chicken"
-          />
-          burgers / fried chicken</label
-        >
+    <form action="/submit-food" method="POST">
+      <div class="food-selection">
+        <div class="food-item">
+          <img src="food/burgers.jpeg" alt="Burgers, fries and fried chicken" />
+          <label
+            ><input
+              type="checkbox"
+              name="food"
+              value="Burgers, fries and fried chicken"
+            />
+            burgers / fried chicken</label
+          >
+        </div>
+        <div class="food-item">
+          <img src="food/dog.jpeg" alt="dog" />
+          <label
+            ><input type="checkbox" name="food" value="hotdog" /> hotdog or perhaps KDOG?</label
+          >
+        </div>
+        <div class="food-item">
+          <img src="food/koreanfood.jpeg" alt="koreanfood" />
+          <label
+            ><input type="checkbox" name="food" value="Korean food" /> korean
+            food
+            like dak or bonchon</label
+          >
+        </div>
+        <div class="food-item">
+          <img src="food/pasta.jpeg" alt="pasta" />
+          <label><input type="checkbox" name="food" value="pasta" /> italian?</label>
+        </div>
+        <div class="food-item">
+          <img src="food/pizza.jpeg" alt="pizza" />
+          <label><input type="checkbox" name="food" value="pizza" /> the other italian?</label>
+        </div>
+        <div class="food-item">
+          <img src="food/salad.jpeg" alt="salad" />
+          <label><input type="checkbox" name="food" value="salad" /> CAVA</label>
+        </div>
+        <div class="food-item">
+          <img src="food/steak.jpeg" alt="steak" />
+          <label><input type="checkbox" name="food" value="steak" /> steak</label>
+        </div>
+        <div class="food-item">
+          <img src="food/sushi.jpeg" alt="sushi" />
+          <label><input type="checkbox" name="food" value="sushi" /> sushi</label>
+        </div>
       </div>
-      <div class="food-item">
-        <img src="food/dog.jpeg" alt="dog" />
-        <label
-          ><input type="checkbox" name="food" value="hotdog" /> hotdog or perhaps KDOG?</label
-        >
-      </div>
-      <div class="food-item">
-        <img src="food/koreanfood.jpeg" alt="koreanfood" />
-        <label
-          ><input type="checkbox" name="food" value="Korean food" /> korean
-          food
-          like dak or bonchon</label
-        >
-      </div>
-      <div class="food-item">
-        <img src="food/pasta.jpeg" alt="pasta" />
-        <label><input type="checkbox" name="food" value="pasta" /> italian?</label>
-      </div>
-      <div class="food-item">
-        <img src="food/pizza.jpeg" alt="pizza" />
-        <label><input type="checkbox" name="food" value="pizza" /> the other italian?</label>
-      </div>
-      <div class="food-item">
-        <img src="food/salad.jpeg" alt="salad" />
-        <label><input type="checkbox" name="food" value="salad" /> CAVA</label>
-      </div>
-      <div class="food-item">
-        <img src="food/steak.jpeg" alt="steak" />
-        <label><input type="checkbox" name="food" value="steak" /> steak</label>
-      </div>
-      <div class="food-item">
-        <img src="food/sushi.jpeg" alt="sushi" />
-        <label><input type="checkbox" name="food" value="sushi" /> sushi</label>
-      </div>
-    </div>
-    <button class="button" onclick="location.href='dessert.html'">
-      now is the matter of the dessert...
-    </button>
+      <button class="button" type="submit">
+        now is the matter of the dessert...
+      </button>
+    </form>
+    
   </body>
 </html>
